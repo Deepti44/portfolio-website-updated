@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+ <link rel= "stylesheet" href="style.css" >
+</head>
+<body>
+ <header id="header">
+  <h1>DEEPTI</h1>
+  <p>Learner | AI & ML Enthusiast</p>
+  <nav>
+   <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+ </header>
+<section class="intro-section">
+  <div class="image-container">
+    <div class="oval-shape"></div>
+    <img src="https://image.freepik.com/free-vector/woman-profile-cartoon_18591-58480.jpg" alt="Deepti's Photo" class="profile-pic">
+  </div>
+  <div class="text-container">
+    <p>Hi, I’m Deepti 👋 An AI enthusiast who loves building creative projects and exploring how technology can solve real-world problems.</p>
+  </div>
+</section>
+
+
+ <section id="about-section">
+  <div class="section-content">
+    <h2>Building AI & Tech Projects</h2> 
+    <p>One of my favorite hobbies is building AI and tech-based projects. I enjoy experimenting with new ideas, creating prediction models, and developing interactive applications. It helps me improve my skills and gives me confidence when I turn my ideas into real working solutions.</p> 
+    <ol id="hobby-list">
+      <li>It improves my problem-solving and logical thinking skills. <button class="delete-btn" onclick="deleteItem(this)">Delete</button></li>
+      <li>It helps me learn new technologies and tools continuously. <button class="delete-btn" onclick="deleteItem(this)">Delete</button></li>
+      <li>It gives me a sense of achievement when I complete a project. <button class="delete-btn" onclick="deleteItem(this)">Delete</button></li>
+    </ol>
+    <div class="hobby-input-area">
+      <input type="text" id="hobby-input" placeholder="Add a new benefit..." />
+      <button id="add-hobby-btn" onclick="addHobbyBenefit()">Add Benefit</button>
+    </div>
+  </div>
+</section>
+
+
+
+ <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate student learning web development. I enjoy solving complex problems and building user-friendly interfaces that make a difference.</p> </section>
+
+            <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Spam SMS Classification</h3>
+                     <p>A machine learning project that utilizes Natural Language Processing (NLP) and algorithms like Naive Bayes to automatically classify text messages as either "spam" or "ham" (legitimate).</p>
+                      <a href="https://github.com/Deepti44/spam-sms-classification">View Project</a> </div>
+                <div class="project-card">
+                    <h3>Scorely</h3> 
+                    <p>Scorely is an Android performance analyzer that tracks student grades and daily habits, providing personalized insights and data visualizations to balance academic success with well-being.</p>
+                     <a href="https://github.com/Deepti44/scorely">View Project</a> </div>
+                <div class="project-card">
+                    <h3>Hand Tracking </h3> <p>A real-time computer vision application built with Python, OpenCV, and MediaPipe that detects and tracks hand landmarks for gesture-based interaction.</p> <a href="https://github.com/Deepti44/hand_tracking">View Project</a> </div>
+            </div>
+        </section>
+<section id="contact">
+            <h2>Contact Me</h2>
+            <form onsubmit="handleFormSubmit(event)">
+                <input type="text" placeholder="Name" required> <input type="email" placeholder="Email" required> <textarea placeholder="Message" rows="5" required></textarea> <button type="submit">Submit</button> </form>
+        </section>
+
+ <footer>
+        <p>Connect with me:</p>
+        <a id ="footer-link" href="https://www.linkedin.com/in/deepti-k-ba28612a9/">LinkedIn</a> | <a id="footer-link" href="https://github.com/Deepti44">GitHub</a>
+        <p id="footer-datetime"></p>
+ </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

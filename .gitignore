@@ -1,0 +1,19 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# Node modules (if you ever use npm)
+node_modules/
+
+# OS generated files
+desktop.ini
